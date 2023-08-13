@@ -1,4 +1,4 @@
-let names = ["sultan","muslat","ibrahim","ziyad","ali"]
+let names = ["sultan","muslat","ibrahim","ziyad","battal"]
 console.log(names);
 console.log(names[2]);
 names.unshift("chess")
