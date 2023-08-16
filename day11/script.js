@@ -3,7 +3,7 @@
 //     if (i == 11) {
 //         break;
 //     }
-//     console.log(i);
+//     alert(i);
 // }
 
 // // التمرين الثاني
@@ -11,7 +11,7 @@
 //     if (i == 10) {
 //         continue;
 //     }
-//     console.log(i);
+//     alert(i);
 // }
 
 //// التمرين الثالث
