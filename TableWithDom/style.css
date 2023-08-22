@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(0, 69, 90);
+}
+
+/* table */
+table {
+    margin: auto;
+    margin-top: 20%;
+    text-align: center;
+    width: 96%;
+    padding: 1%;
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+}
+
+#addbut {
+    margin-top: 5%;
+    margin-right: 50%;
+    background-color: rgb(15, 100, 22);
+}
+
+button {
+    color: white;
+    border-radius: 6px;
+    width: 4vw;
+    height: 4vh;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delBut {
+    margin-right: 5%;
+    background-color: rgb(88, 3, 3);
+}
+
+.editBut {
+    background-color: rgb(7, 65, 119);
+}
