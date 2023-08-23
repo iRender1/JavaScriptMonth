@@ -10,7 +10,11 @@ addbut.addEventListener('click', function () {
     task.innerHTML = prompt('اسم المهمة');
 
     let done = document.createElement("td");
-    done.innerHTML = prompt('تمت او لم تتم؟');
+    if (confirm('تمت او لم تتم؟')) {
+        done.innerHTML = "تمت";
+    } else {
+        done.innerHTML = "لم تتم";
+    }
 
     let createtime = document.createElement("td");
     createtime.innerHTML = new Date();
@@ -20,12 +24,16 @@ addbut.addEventListener('click', function () {
 
     let editbut = document.createElement("button")
     editbut.className = "editBut";
-    editbut.innerHTML = "تعديل"
+    editbut.innerHTML = '<span class="material-symbols-outlined"> edit </span>'
 
     editbut.addEventListener('click', function () {
         editinfo.innerHTML = new Date();
         task.innerHTML = prompt('اسم المهمة');
-        done.innerHTML = prompt('تمت او لم تتم؟');
+        if (confirm('تمت او لم تتم؟')) {
+            done.innerHTML = "تمت";
+        } else {
+            done.innerHTML = "لم تتم";
+        }
 
         if (task.innerHTML === null || task.innerHTML.trim() === "" && done.innerHTML === null || done.innerHTML.trim() === "") {
             Swal.fire({
@@ -39,14 +47,14 @@ addbut.addEventListener('click', function () {
         } else {
             Swal.fire({
                 icon: 'success',
-                title: 'تم تعديل ماتريده',
+                title: 'تم تعديل المهمة',
             })
         }
     })
 
     let deletebut = document.createElement("button")
     deletebut.className = "delBut";
-    deletebut.innerHTML = "حذف"
+    deletebut.innerHTML = '<span class="material-symbols-outlined"> delete </span>'
 
 
 
@@ -65,7 +73,7 @@ addbut.addEventListener('click', function () {
     } else {
         Swal.fire({
             icon: 'success',
-            title: 'تم انشاء ماتريده',
+            title: 'تم انشاء المهمة',
         })
     }
 
